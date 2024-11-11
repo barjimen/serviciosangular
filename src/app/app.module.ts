@@ -10,6 +10,7 @@ import { ServiceComics } from './services/service.comics';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from './services/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
+import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,8 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
-  ],
+    PersonasstandaloneComponent
+],
   providers: [ServiceComics, ServicePersonas, provideHttpClient()],
   bootstrap: [AppComponent]
 })
